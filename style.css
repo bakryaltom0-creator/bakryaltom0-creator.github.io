@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Orbitron:wght@500;700;800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#03070d;color:#eaf7ff;font-family:Cairo,Arial,sans-serif;line-height:1.8}
+a{text-decoration:none;color:inherit}
+.nav{height:74px;position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:0 6%;background:rgba(3,7,13,.86);backdrop-filter:blur(14px);border-bottom:1px solid #0b6fae}
+.brand{font-family:Orbitron,sans-serif;letter-spacing:2px;font-weight:800;font-size:18px}.brand span{color:#00aaff;margin-left:8px}
+nav{display:flex;gap:28px;font-weight:600}nav a{color:#b8cfdd;transition:.25s}nav a:hover{color:#00b7ff}
+#menu{display:none;background:none;border:0;color:#fff;font-size:28px}
+.hero{min-height:100vh;padding:150px 8% 90px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:60px;background:radial-gradient(circle at 75% 35%,#07375c 0,#061827 28%,#03070d 65%)}
+.grid{position:absolute;inset:0;opacity:.18;background-image:linear-gradient(#0b9fe555 1px,transparent 1px),linear-gradient(90deg,#0b9fe555 1px,transparent 1px);background-size:55px 55px;transform:perspective(500px) rotateX(60deg) scale(1.8);transform-origin:center bottom}
+.hero-copy,.terminal{position:relative;z-index:2}
+.eyebrow{font-family:Orbitron,sans-serif;color:#00b7ff;letter-spacing:3px;font-size:13px}
+h1{font-family:Orbitron,sans-serif;font-size:clamp(48px,8vw,92px);line-height:1.15;margin:15px 0}h1 b{color:#00aaff}
+h2{font-size:30px;margin-bottom:18px}.lead{max-width:620px;color:#a9c2d0;font-size:18px}
+.actions{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}.btn{padding:12px 25px;border:1px solid #008ed0;border-radius:7px;color:#dff6ff}.btn.primary{background:#00aaff;color:#00131d;font-weight:800}
+.terminal{width:min(390px,100%);padding:22px;border:1px solid #008ed0;background:#020911cc;box-shadow:0 0 35px #007db333;font-family:monospace;color:#75d8ff;direction:ltr;text-align:left}.terminal i{display:inline-block;width:10px;height:10px;border-radius:50%;background:#168dcc;margin-right:6px}.terminal p{margin-top:15px}.terminal span{color:#42ffb0}
+.section{padding:100px 8%;border-top:1px solid #0a3146;max-width:1400px;margin:auto}.section h2{font-size:42px}
+.about{display:grid;grid-template-columns:1.4fr .8fr;gap:70px;align-items:center}.about p{color:#aac0cb;font-size:18px;margin:10px 0}
+.profile-card{padding:45px;text-align:center;border:1px solid #008ed0;background:linear-gradient(145deg,#071824,#02070c);clip-path:polygon(8% 0,92% 0,100% 8%,100% 92%,92% 100%,8% 100%,0 92%,0 8%)}.avatar{width:150px;height:150px;margin:auto;border:2px solid #00aaff;border-radius:50%;display:grid;place-items:center;font:800 38px Orbitron;color:#00b7ff;box-shadow:0 0 35px #00aaff55}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}.cards article{padding:30px;border:1px solid #07577c;background:#05111a;min-height:190px;transition:.25s}.cards article:hover{transform:translateY(-5px);border-color:#00b7ff;box-shadow:0 12px 40px #008ed022}.cards span{font:700 24px Orbitron;color:#00b7ff}.cards h3{font-size:22px;margin:10px 0}.cards p{color:#9db5c1}
+.contact{text-align:center}.contact p{color:#a9c2d0}.socials{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:25px}.socials a{border:1px solid #0879ad;padding:9px 18px;border-radius:6px;color:#7fdbff}
+footer{padding:35px 8%;display:flex;justify-content:space-between;gap:20px;border-top:1px solid #0b6fae;color:#83a4b2}footer div{font:700 18px Orbitron;color:#eaf7ff}
+@media(max-width:800px){.nav{padding:0 5%}nav{display:none;position:absolute;top:74px;left:0;right:0;padding:20px;background:#03070d;flex-direction:column;gap:10px;border-bottom:1px solid #0b6fae}nav.open{display:flex}#menu{display:block}.hero{padding-top:125px;flex-direction:column;align-items:flex-start}.terminal{width:100%}.about{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.section{padding:75px 6%}h2,.section h2{font-size:32px}footer{flex-direction:column}}
+
+.profile-photo{width:100%;max-width:320px;aspect-ratio:4/5;object-fit:cover;display:block;margin:0 auto 22px;border:2px solid #00aaff;box-shadow:0 0 35px #00aaff33}
